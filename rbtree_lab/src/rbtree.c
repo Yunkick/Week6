@@ -112,7 +112,7 @@ void RB_Delete_Fixup(rbtree *t, node_t *x){
           left_rotate(t,w);
           w = x->parent->left;
         }
-        w->color = x->parent->color; //case 4
+        w->color = x->parent->color; //case
         x->parent->color = RBTREE_BLACK;
         w->left->color = RBTREE_BLACK;
         right_rotate(t,x->parent);
